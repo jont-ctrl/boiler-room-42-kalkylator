@@ -10,6 +10,7 @@ function runCalculator() {
 
   let result = 0;
 
+  // Om det inte är ett nummer från prompt blir det error.
   if (isNaN(num1) || isNaN(num2)) {
     console.log('Error no number input');
     alert('Error no number input');
@@ -41,6 +42,11 @@ function runCalculator() {
         result = num1 % num2;
         alert('Resultatet av modulus: ' + result);
         break;
+      // Om ej rätt operation väljs blir det error.
+      default:
+        // Om operationen inte är giltig
+        console.log('Error: Ogiltig operation.');
+        alert('Error: Ogiltig operation. Välj en av: +, -, *, /, %.');
     }
   }
 }
