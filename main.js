@@ -5,8 +5,8 @@ function runCalculator() {
   let num2 = Number(prompt('Skriv tal 2'));
 
   console.log(num1);
-  console.log(num2);
   console.log(choseOperation);
+  console.log(num2);
 
   let result = 0;
 
