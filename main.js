@@ -38,6 +38,7 @@ function runCalculator() {
         result = num1 / num2;
         alert('Resultatet av division: ' + result);
         break;
+      // Modulus
       case '%':
         console.log('Resultatet av modulus: ', num1 % num2);
         result = num1 % num2;
