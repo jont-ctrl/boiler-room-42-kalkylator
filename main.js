@@ -16,6 +16,7 @@ function runCalculator() {
     alert('Error no number input');
   } else {
     console.log('Number input ok');
+    // Switch case för att matcha rätt operation
     switch (choseOperation) {
       case '+':
         console.log('Resultatet av addition: ', num1 + num2);
