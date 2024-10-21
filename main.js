@@ -1,4 +1,5 @@
 function runCalculator() {
+  // Frågar om nummer och vilken operation, för nummer konverteras string till number datatyp
   let num1 = Number(prompt('Skriv tal 1'));
   let choseOperation = prompt('Välj mellan: +, -, *, /, %');
   let num2 = Number(prompt('Skriv tal 2'));
@@ -10,7 +11,8 @@ function runCalculator() {
   let result = 0;
 
   if (isNaN(num1) || isNaN(num2)) {
-    console.log('Error no number');
+    console.log('Error no number input');
+    alert('Error no number input');
   } else {
     console.log('Number input ok');
     switch (choseOperation) {
